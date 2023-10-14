@@ -97,3 +97,37 @@ a {
   font-weight: 400;
   line-height: 120%;
 }
+
+.cards__container {
+  /* display: flex; */
+  /* justify-content: center; */
+  border: 1px solid blue;
+  height: 62rem;
+}
+
+.rodae__card {
+  border: 2px solid #4b4b4b;
+  height: 22rem;
+  width: 56rem;
+  border-radius: 0.82763rem;
+}
+
+.rodade__image {
+  background-image: url("/rodade.svg");
+  height: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aguascalientes__image {
+  background-image: url("/aguascalientes.svg");
+  height: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aguascalientes__card {
+  /* width: 17.625rem; */
+  /* height: 22.0625rem; */
+  border-radius: 0.82763rem;
+  border: 2px solid #4b4b4b;
+  font-size: 0.9rem;
+}

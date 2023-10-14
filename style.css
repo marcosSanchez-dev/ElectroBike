@@ -131,3 +131,15 @@ a {
   border: 2px solid #4b4b4b;
   font-size: 0.9rem;
 }
+
+.formulario {
+  background: #4b4b4b;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background: #303030;
+  height: 3rem;
+  color: white;
+}

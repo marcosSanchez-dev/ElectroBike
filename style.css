@@ -61,7 +61,7 @@ a {
 }
 
 .hero__title {
-  width: 38rem;
+  width: 60%;
   /* border: 1px solid blue; */
 }
 .hero__title h1 {
@@ -79,13 +79,17 @@ a {
   font-weight: 400;
   line-height: 115%; /* 2.15625rem */
 }
-.hero__title button {
+.hero__title button,
+.formulario button {
   width: 100%;
   border-radius: 0px;
   background: #72b344;
   padding: 1.0625rem 7.5rem;
   gap: 0.625rem;
   color: black;
+  font-family: Overpass;
+  font-size: 1.25rem;
+  font-style: normal;
 }
 .carousel__section {
   height: 52rem;
@@ -101,14 +105,14 @@ a {
 .cards__container {
   /* display: flex; */
   /* justify-content: center; */
-  border: 1px solid blue;
-  height: 62rem;
+  /* border: 1px solid blue; */
+  /* height: 62rem; */
 }
 
 .rodae__card {
   border: 2px solid #4b4b4b;
   height: 22rem;
-  width: 56rem;
+  /* width: 56rem; */
   border-radius: 0.82763rem;
 }
 
@@ -136,6 +140,23 @@ a {
   background: #4b4b4b;
   color: white;
   text-align: center;
+}
+
+.formulario h1 {
+  text-align: center;
+  font-family: Overpass;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.6%; /* 2.365rem */
+}
+
+.formulario p {
+  font-family: Overpass;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.6%;
 }
 
 .footer {

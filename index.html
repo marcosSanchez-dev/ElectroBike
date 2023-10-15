@@ -47,7 +47,7 @@
     </section>
     <div id="app">
       <section class="hero__section d-flex align-items-center">
-        <div class="hero__title">
+        <div class="hero__title ps-5">
           <h1>
             Somos una <br />
             empresa <br />
@@ -62,7 +62,7 @@
             Visita tu Centro de Servicio Autorizado <br />
             más cercano.
           </p>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary border-0">
             Acerca de nosotros
           </button>
         </div>
@@ -95,7 +95,10 @@
           </h1>
         </div>
         <div class="cards__container">
-          <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-center"
+            style="padding-left: 9%; padding-right: 9%; margin: 0 auto"
+          >
             <div class="rodae__card col-12">
               <div class="rodade__image"></div>
               <div class="py-3 px-5">
@@ -114,10 +117,10 @@
           </div>
 
           <div
-            class="d-flex justify-content-between py-5"
-            style="max-width: 56rem; margin: 0 auto"
+            class="d-flex py-5 justify-content-around"
+            style="padding-left: 10%; padding-right: 10%; margin: 0 auto"
           >
-            <div class="aguascalientes__card col-4 me-3">
+            <div class="aguascalientes__card col-4 mx-2">
               <div class="aguascalientes__image"></div>
               <div class="p-3">
                 <h6><b>Aguascalientes</b></h6>
@@ -135,7 +138,7 @@
               </div>
             </div>
 
-            <div class="aguascalientes__card col-4 me-3">
+            <div class="aguascalientes__card col-4 mx-2">
               <div class="aguascalientes__image"></div>
               <div class="p-3">
                 <h6><b>Aguascalientes</b></h6>
@@ -153,7 +156,7 @@
               </div>
             </div>
 
-            <div class="aguascalientes__card col-4 me-3">
+            <div class="aguascalientes__card col-4 mx-2">
               <div class="aguascalientes__image"></div>
               <div class="p-3">
                 <h6><b>Aguascalientes</b></h6>
@@ -174,7 +177,7 @@
         </div>
       </section>
       <section class="formulario">
-        <div>
+        <div class="pt-5 pb-1">
           <h1>Contacto</h1>
           <p>
             Puedes enviar un correo a :
@@ -185,62 +188,82 @@
         <div class="container mt-5">
           <form>
             <div class="form-row d-flex">
-              <div class="col-4 px-3">
+              <div class="col-4 px-3 text-start">
                 <div class="form-group">
                   <label for="nombre">Nombre:</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control rounded-0"
                     id="nombre"
-                    placeholder="Introduce tu nombre"
                     required
                   />
                 </div>
               </div>
-              <div class="col-4 px-3">
+              <div class="col-4 px-3 text-start">
                 <div class="form-group">
                   <label for="apellidos">Apellidos:</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control rounded-0"
                     id="apellidos"
-                    placeholder="Introduce tus apellidos"
                     required
                   />
                 </div>
               </div>
-              <div class="col-4 px-3">
+              <div class="col-4 px-3 text-start">
                 <div class="form-group">
                   <label for="email">Email:</label>
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control rounded-0"
                     id="email"
-                    placeholder="Introduce tu email"
                     required
                   />
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="proyecto">Cuéntanos sobre tu proyecto:</label>
+            <div class="form-group px-3 text-start py-4">
+              <label for="proyecto"><b>Cuéntanos sobre tu proyecto:</b></label>
               <textarea
-                class="form-control"
+                class="form-control rounded-0"
                 id="proyecto"
                 rows="4"
-                placeholder="Describe tu proyecto aquí"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">
-              Enviar Mensaje
-            </button>
+            <div class="px-3 pt-3 pb-5">
+              <button
+                type="submit"
+                class="btn btn-primary col-12 rounded-0 border-0 text-white"
+              >
+                Enviar Mensaje
+              </button>
+            </div>
           </form>
         </div>
       </section>
     </div>
     <section class="footer">
-      <h3>footer</h3>
+      <div class="d-flex justify-content-between h-100 align-items-end">
+        <ul class="d-flex col-6 justify-content-around">
+          <li><a href="" target="_blank">Aviso de privacidad</a></li>
+          <li><a href="" target="_blank"> Términos y condiciones</a></li>
+          <li><a href="" target="_blank">Preguntas frecuentes</a></li>
+        </ul>
+        <ul class="d-flex col-6 justify-content-end">
+          <span class="me-5"><b>Siguenos en</b></span>
+          <li class="me-5">
+            <a href="" target="_blank"
+              ><img src="/facebook.svg" alt="" srcset=""
+            /></a>
+          </li>
+          <li class="me-5">
+            <a href="" target="_blank"
+              ><img src="/instagram.svg" alt="" srcset=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- <script type="module" src="/main.js"></script> -->
   </body>

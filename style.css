@@ -19,16 +19,15 @@ body {
 }
 
 #app {
-  width: 70rem;
+  max-width: 70rem;
   /* border: 1px solid red; */
   /* height: 100vh; */
   margin: 0 auto;
+  /* padding: 0 15rem; */
+  /* max-width: 90rem; */
 }
 .nav__menu__container {
   background: #303030;
-  height: 3rem;
-  display: flex;
-  align-items: center;
 }
 
 .nav__menu {
@@ -40,7 +39,12 @@ body {
   line-height: normal;
 }
 
-.nav__menu ul {
+.nav__limit {
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  max-width: 70rem;
+  min-height: 3rem;
 }
 
 li {
@@ -54,31 +58,37 @@ a {
 
 .hero__section {
   background-image: url("/hero_background.svg");
-  width: 70rem;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 50rem;
   flex-shrink: 0;
   color: white;
+  height: 50rem;
 }
 
-.hero__title {
-  width: 60%;
-  /* border: 1px solid blue; */
+@media (max-width: 768px) {
+  .hero__section {
+    background-position: 80% 0;
+  }
 }
+
 .hero__title h1 {
   font-family: Overpass;
-  font-size: 3.75rem;
+  font-size: clamp(2rem, 3.75vw, 3.75rem); /* Uso de clamp */
   font-style: normal;
   font-weight: 400;
-  line-height: 94.6%; /* 3.5475rem */
+  line-height: 1;
   text-transform: uppercase;
 }
+
 .hero__title p {
   font-family: Overpass;
-  font-size: 1.875rem;
+  font-size: clamp(1rem, 1.875vw, 1.875rem); /* Uso de clamp */
   font-style: normal;
   font-weight: 400;
-  line-height: 115%; /* 2.15625rem */
+  line-height: 1.2;
 }
+
 .hero__title button,
 .formulario button {
   width: 100%;
@@ -88,18 +98,40 @@ a {
   gap: 0.625rem;
   color: black;
   font-family: Overpass;
-  font-size: 1.25rem;
+  font-size: clamp(0.8rem, 1.25vw, 1.25rem); /* Uso de clamp */
   font-style: normal;
 }
+
+/* No necesitas la media query para pantallas más pequeñas porque el clamp se encargará de ello */
+
 .carousel__section {
   height: 52rem;
   background-image: url("/bike1.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
   font-family: Overpass;
-  font-size: 1.25rem;
+  font-size: 1.25vw; /* Cambiado a vw */
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2; /* Ajustado para simplicidad */
+}
+
+.carousel__section p {
+  font-family: Overpass;
+  font-size: 1.55vw; /* Cambiado a vw */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; /* Ajustado para simplicidad */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .carousel__section,
+  .carousel__section p {
+    font-size: 3.5vw; /* Ajusta según lo necesites */
+    padding: 4%;
+  }
 }
 
 .cards__container {

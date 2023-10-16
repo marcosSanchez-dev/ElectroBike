@@ -107,32 +107,34 @@ a {
 .carousel__section {
   height: 52rem;
   background-image: url("/bike1.png");
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Overpass;
-  font-size: 1.25vw; /* Cambiado a vw */
+  font-size: clamp(1rem, 1.25vw, 1.25rem); /* Uso de clamp */
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2; /* Ajustado para simplicidad */
+  line-height: 1.2;
 }
 
 .carousel__section p {
   font-family: Overpass;
-  font-size: 1.55vw; /* Cambiado a vw */
+  font-size: clamp(1.2rem, 1.25vw, 1.25rem); /* Uso de clamp */
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2; /* Ajustado para simplicidad */
+  line-height: 1.2;
 }
 
-/* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .carousel__section,
+  .carousel__section {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   .carousel__section p {
-    font-size: 3.5vw; /* Ajusta según lo necesites */
-    padding: 4%;
+    padding: 7%;
   }
 }
+
+/* No necesitas la media query para pantallas más pequeñas porque el clamp se encargará de ello */
 
 .cards__container {
   /* display: flex; */

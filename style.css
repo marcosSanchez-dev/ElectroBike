@@ -131,6 +131,7 @@ a {
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    height: 37rem;
   }
   .carousel__section p {
     padding: 7%;

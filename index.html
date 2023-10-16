@@ -292,5 +292,15 @@
       </div>
     </section>
     <!-- <script type="module" src="/main.js"></script> -->
+    <script>
+      const carouselSection = document.querySelector(".carousel__section");
+      const images = ["/bike1.png", "/bike2.png", "/bike3.png"];
+      let currentIndex = 0;
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length; // Esto nos asegura que volvamos al inicio después de la última imagen.
+        carouselSection.style.backgroundImage = `url(${images[currentIndex]})`;
+      }, 2500); // Cambiará la imagen cada 5 segundos. Puedes ajustar este valor según lo necesites.
+    </script>
   </body>
 </html>

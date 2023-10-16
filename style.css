@@ -106,6 +106,7 @@ a {
 
 .carousel__section {
   min-height: 37rem;
+  height: 52rem;
   max-height: 52rem;
   background-image: url("/bike1.png");
   background-size: cover;

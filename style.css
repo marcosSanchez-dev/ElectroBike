@@ -205,6 +205,6 @@ a {
 
 .footer {
   background: #303030;
-  height: 3rem;
+  min-height: 3rem;
   color: white;
 }

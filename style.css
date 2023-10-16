@@ -170,6 +170,18 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.merida__image {
+  background-image: url("/merida.svg");
+  height: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.qro__image {
+  background-image: url("/qro.svg");
+  height: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .aguascalientes__card {
   /* width: 17.625rem; */
   /* height: 22.0625rem; */

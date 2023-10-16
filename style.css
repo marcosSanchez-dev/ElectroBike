@@ -105,7 +105,8 @@ a {
 /* No necesitas la media query para pantallas más pequeñas porque el clamp se encargará de ello */
 
 .carousel__section {
-  height: 52rem;
+  min-height: 37rem;
+  max-height: 52rem;
   background-image: url("/bike1.png");
   background-size: cover;
   font-family: Overpass;
@@ -125,12 +126,16 @@ a {
 
 @media (max-width: 768px) {
   .carousel__section {
-    background-position: center;
+    background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .carousel__section p {
     padding: 7%;
+  }
+
+  .minicards__container {
+    flex-wrap: wrap;
   }
 }
 
@@ -168,6 +173,11 @@ a {
   border-radius: 0.82763rem;
   border: 2px solid #4b4b4b;
   font-size: 0.9rem;
+}
+
+.rodae__card,
+.aguascalientes__card {
+  min-width: 18rem;
 }
 
 .formulario {
